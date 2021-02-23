@@ -229,28 +229,35 @@ namespace MARIO_KART_RANDOMIZER
                                           };
 
             // choosing a random character and vehicle based on what class was chosen
-            if (class_pick == "Light_Weight")
+            switch (class_pick)
             {
-                string character_chosen = light_weight_characters[character_pick];
-                string vehicle_chosen = light_weight_bikes[vehicle_pick];
-                Console.WriteLine(character_chosen);
-                Console.WriteLine(vehicle_chosen);
-            }
+                case "Light_Weight":
+                    string light_character_chosen = light_weight_characters[character_pick];
+                    string light_vehicle_chosen = light_weight_bikes[vehicle_pick];
+                    Console.WriteLine(light_character_chosen);
+                    Console.WriteLine(light_vehicle_chosen);
+                    break;
 
-            else if (class_pick == "Medium_Weight")
-            {
-                string character_chosen = medium_weight_characters[character_pick];
-                string vehicle_chosen = medium_weight_bikes[vehicle_pick];
-                Console.WriteLine(character_chosen);
-                Console.WriteLine(vehicle_chosen);
-            }
 
-            else if (class_pick == "Heavy_Weight")
-            {
-                string character_chosen = heavy_weight_characters[character_pick];
-                string vehicle_chosen = heavy_weight_bikes[vehicle_pick];
-                Console.WriteLine(character_chosen);
-                Console.WriteLine(vehicle_chosen);
+                case "Medium_Weight":
+                    string medium_character_chosen = medium_weight_characters[character_pick];
+                    string medium_vehicle_chosen = medium_weight_bikes[vehicle_pick];
+                    Console.WriteLine(medium_character_chosen);
+                    Console.WriteLine(medium_vehicle_chosen);
+                    break;
+
+
+                case "Heavy_Weight":
+                    string heavy_character_chosen = heavy_weight_characters[character_pick];
+                    string heavy_vehicle_chosen = heavy_weight_bikes[vehicle_pick];
+                    Console.WriteLine(heavy_character_chosen);
+                    Console.WriteLine(heavy_vehicle_chosen);
+                    break;
+
+                default:
+                    Console.WriteLine("ERROR: Could not pick character!");
+                    Console.WriteLine("Please try again!");
+                    break;
             }
         }
 
