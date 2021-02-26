@@ -10,7 +10,6 @@ namespace MARIO_KART_RANDOMIZER
 
         public static void Main(string[] args)
         {
-
             while (true)
             {
                 Console.WriteLine("Welcome to my Mario Kart Wii/8 Deluxe Randomizers!");
@@ -30,7 +29,7 @@ namespace MARIO_KART_RANDOMIZER
 
                 else if (pick_randomizer == "2")
                 {
-                    pick.Mario_Kart_8_Deluxe(); // Note: in progress
+                    pick.Mario_Kart_8_Deluxe();
                     break;
                 }
 
