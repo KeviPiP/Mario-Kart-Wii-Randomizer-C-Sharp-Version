@@ -6,10 +6,11 @@
     <ApplicationIcon>icon.ico</ApplicationIcon>
     <SignAssembly>false</SignAssembly>
     <RepositoryUrl>https://github.com/KeviPiP/Mario-Kart-Wii-and-8-Deluxe-Randomizer</RepositoryUrl>
-    <Company>N/A</Company>
+    <Company></Company>
     <Authors>KeviPiP</Authors>
     <Product>Mario_Kart_Wii_and_8_Deluxe_Randomizer</Product>
     <Description>A randomizer for Mario Kart Wii and for Mario Kart 8 Deluxe!</Description>
+    <AssemblyName>Mario_Kart_Wii_and_8_Deluxe_Randomizer</AssemblyName>
   </PropertyGroup>
 
 </Project>
