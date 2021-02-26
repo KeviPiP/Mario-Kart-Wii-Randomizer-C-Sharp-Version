@@ -1,8 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <RepositoryUrl>https://github.com/KeviPiP/Mario-Kart-Wii-and-8-Deluxe-Randomizer</RepositoryUrl>
+    <Company>N/A</Company>
+    <Authors>KeviPiP</Authors>
+    <Product>Mario_Kart_Wii_and_8_Deluxe_Randomizer</Product>
+    <Description>A randomizer for Mario Kart Wii and for Mario Kart 8 Deluxe!</Description>
   </PropertyGroup>
 
 </Project>
