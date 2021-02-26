@@ -1,10 +1,10 @@
-Mario Kart Wii Randomizer made in C# with .NET Core 3.1
+Mario Kart Wii Randomizer made in C# with .NET 5.0
 
 Note: This is a Command Line program, a GUI version will be coming soon. Once I figure out how to do it lol.
 
-Download .NET Core 3.1 Runtime
+Download .NET 5.0 Runtime:
 
-https://dotnet.microsoft.com/download/dotnet/3.1/runtime
+https://dotnet.microsoft.com/download/dotnet/5.0/runtime
 
 Features:
 
