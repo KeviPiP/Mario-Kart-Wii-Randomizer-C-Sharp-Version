@@ -86,8 +86,8 @@ namespace MARIO_KART_RANDOMIZER
                     break;
                 
                 default:
-                    Console.WriteLine("ERROR: Could not choose class!");
-                    Console.WriteLine("Restart program!");
+                    Console.WriteLine("ERROR: Could not choose character or vehicle!");
+                    Console.WriteLine("Please try again!");
                     break;
             }
 
@@ -171,7 +171,7 @@ namespace MARIO_KART_RANDOMIZER
                     break;
 
                 default:
-                    Console.WriteLine("ERROR: Could not pick character!");
+                    Console.WriteLine("ERROR: Could not pick character and kart!");
                     Console.WriteLine("Please try again!");
                     break;
             }
@@ -255,7 +255,7 @@ namespace MARIO_KART_RANDOMIZER
                     break;
 
                 default:
-                    Console.WriteLine("ERROR: Could not pick character!");
+                    Console.WriteLine("ERROR: Could not pick character and bike!");
                     Console.WriteLine("Please try again!");
                     break;
             }
@@ -345,7 +345,7 @@ namespace MARIO_KART_RANDOMIZER
                     break;
 
                 default:
-                    Console.WriteLine("ERROR: Couldn't pick track!");
+                    Console.WriteLine("ERROR: Could not pick track!");
                     Console.WriteLine("Please try again!");
                     break;
             }

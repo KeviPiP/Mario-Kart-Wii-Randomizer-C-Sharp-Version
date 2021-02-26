@@ -14,8 +14,11 @@ namespace MARIO_KART_RANDOMIZER
             while (true)
             {
                 Console.WriteLine("Welcome to my Mario Kart Wii/8 Deluxe Randomizers!");
+                Console.WriteLine("This assumes you have everything unlocked in both games!");
+                Console.WriteLine("");
                 Console.WriteLine("Type 1 - for the Mario Kart Wii Randomizer!");
                 Console.WriteLine("Type 2 - for the Mario Kart 8 Deluxe Randomizer!");
+                Console.WriteLine("Type 3 - to exit.");
                 string pick_randomizer = Console.ReadLine();
 
                 if (pick_randomizer == "1")
@@ -28,6 +31,12 @@ namespace MARIO_KART_RANDOMIZER
                 else if (pick_randomizer == "2")
                 {
                     pick.Mario_Kart_8_Deluxe(); // Note: in progress
+                    break;
+                }
+
+                else if (pick_randomizer == "3")
+                {
+                    Console.WriteLine("Goodbye...");
                     break;
                 }
 
@@ -86,7 +95,7 @@ namespace MARIO_KART_RANDOMIZER
 
             if (restart == "Y")
             {
-                Console.WriteLine("Restarting...");
+                Console.WriteLine("Restarting MKW Randomizer...");
                 pick.Mario_Kart_Wii();
             }
             else
@@ -177,7 +186,7 @@ namespace MARIO_KART_RANDOMIZER
             while (true)
             {
                 // waits for user to input Y or N to generate new track.
-                Console.WriteLine("===========");
+                Console.WriteLine("============");
                 Console.Write("Randomize new track? Y/N: ");
                 string answer = Console.ReadLine();
                 answer = answer.ToUpper();
@@ -185,9 +194,9 @@ namespace MARIO_KART_RANDOMIZER
                 if (answer == "Y")
                 {
                     // uses same logic used for printing the player numbers but prints track numbers instead
-                    Console.WriteLine("===========");
+                    Console.WriteLine("============");
                     Console.WriteLine($"Track {track_num}");
-                    MK8_Deluxe_Pick.Mario_Kart_8_Deluxe_Default_Randomizer();
+                    MK8_Deluxe_Pick.Mario_Kart_8_Deluxe_Random_Track_Picker();
                     track_num += 1;
                 }
 
@@ -204,14 +213,14 @@ namespace MARIO_KART_RANDOMIZER
             }
 
             // if user types N in track randomizer, ask user this
-            Console.WriteLine("===========");
+            Console.WriteLine("============");
             Console.Write("Would you like to run the MK8_Deluxe randomizer again? Y/N: ");
             string restart = Console.ReadLine();
             restart = restart.ToUpper();
 
             if (restart == "Y")
             {
-                Console.WriteLine("Restarting...");
+                Console.WriteLine("Restarting MK8 Deluxe Randomizer...");
                 pick.Mario_Kart_8_Deluxe();
             }
             else
@@ -233,7 +242,7 @@ namespace MARIO_KART_RANDOMIZER
             if (ans != "1" && ans != "2" && ans != "3" && ans != "4")
             {
                 Console.WriteLine("That's not a valid option! Try again!");
-                Console.WriteLine("=========");
+                Console.WriteLine("============");
                 pick.Mario_Kart_8_Deluxe();
             }
 
@@ -243,10 +252,12 @@ namespace MARIO_KART_RANDOMIZER
 
             if (ans == "1")
             {
+                Console.WriteLine("============");
                 while (player_num < 5)
                 {
-                    Console.WriteLine("===========");
+                    Console.WriteLine("");
                     Console.WriteLine($"Player {player_num}");
+                    Console.WriteLine("");
                     MK8_Deluxe_Pick.Mario_Kart_8_Deluxe_Default_Randomizer();
                     player_num += 1;
 
@@ -262,8 +273,9 @@ namespace MARIO_KART_RANDOMIZER
             {
                 while (player_num < 5)
                 {
-                    Console.WriteLine("===========");
+                    Console.WriteLine("");
                     Console.WriteLine($"Player {player_num}");
+                    Console.WriteLine("");
                     MK8_Deluxe_Pick.Mario_Kart_8_Deluxe_Gliders_Only();
                     player_num += 1;
 
@@ -279,8 +291,9 @@ namespace MARIO_KART_RANDOMIZER
             {
                 while (player_num < 5)
                 {
-                    Console.WriteLine("===========");
+                    Console.WriteLine("");
                     Console.WriteLine($"Player {player_num}");
+                    Console.WriteLine("");
                     MK8_Deluxe_Pick.Mario_Kart_8_Deluxe_Wheels_Only();
                     player_num += 1;
 
@@ -296,8 +309,9 @@ namespace MARIO_KART_RANDOMIZER
             {
                 while (player_num < 5)
                 {
-                    Console.WriteLine("===========");
+                    Console.WriteLine("");
                     Console.WriteLine($"Player {player_num}");
+                    Console.WriteLine("");
                     MK8_Deluxe_Pick.Mario_Kart_8_Deluxe_Bodies_Only();
                     player_num += 1;
 
