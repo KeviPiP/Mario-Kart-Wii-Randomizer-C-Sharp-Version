@@ -10,6 +10,12 @@ namespace MARIO_KART_RANDOMIZER
 
         public static void Main(string[] args)
         {
+            // Start Main program
+            pick.Start_Program();
+        }
+
+        public void Start_Program()
+        {
             while (true)
             {
                 Console.WriteLine("Welcome to my Mario Kart Wii/8 Deluxe Randomizers!");
@@ -45,10 +51,6 @@ namespace MARIO_KART_RANDOMIZER
                     continue;
                 }
             }
-
-
-
-
         }
 
         // this class was made to clean up the code a little so I'm not just reusing code over and over again. It just looked ugly to me.
@@ -87,7 +89,7 @@ namespace MARIO_KART_RANDOMIZER
             }
 
             // if user types N in track randomizer, ask user this
-            Console.WriteLine("===========");
+            Console.WriteLine("");
             Console.Write("Would you like to run the MKW randomizer again? Y/N: ");
             string restart = Console.ReadLine();
             restart = restart.ToUpper();
@@ -99,8 +101,9 @@ namespace MARIO_KART_RANDOMIZER
             }
             else
             {
-                Console.WriteLine("Goodbye...");
-                Environment.Exit(0);
+                Console.WriteLine("Restarting Program...");
+                Console.WriteLine("");
+                pick.Start_Program();
             }
         }
 
@@ -212,7 +215,7 @@ namespace MARIO_KART_RANDOMIZER
             }
 
             // if user types N in track randomizer, ask user this
-            Console.WriteLine("============");
+            Console.WriteLine("");
             Console.Write("Would you like to run the MK8_Deluxe randomizer again? Y/N: ");
             string restart = Console.ReadLine();
             restart = restart.ToUpper();
@@ -224,8 +227,9 @@ namespace MARIO_KART_RANDOMIZER
             }
             else
             {
-                Console.WriteLine("Goodbye...");
-                Environment.Exit(0);
+                Console.WriteLine("Restarting Program...");
+                Console.WriteLine("");
+                pick.Start_Program();
             }
         }
 

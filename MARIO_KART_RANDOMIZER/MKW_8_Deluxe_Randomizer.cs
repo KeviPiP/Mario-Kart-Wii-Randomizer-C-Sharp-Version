@@ -6,6 +6,7 @@ namespace MARIO_KART_RANDOMIZER
 {
     class MKW_8_Deluxe_Randomizer
     {
+        // making an object of this class so it can be used in all methods
         static readonly MKW_8_Deluxe_Randomizer picker = new MKW_8_Deluxe_Randomizer();
         
         // initialising random as field so it can be used everywhere
