@@ -1,4 +1,4 @@
-Mario Kart Wii Randomizer made in C# with .NET 5.0
+Mario Kart Wii/8 Deluxe Randomizer made in C# with .NET 5.0
 
 Note: This is a Command Line program, a GUI version will be coming soon. Once I figure out how to do it lol.
 
